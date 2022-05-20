@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <style >
+    body{
+      background: url(https://img.freepik.com/free-vector/soft-yellow-watercolor-texture-background_1055-10236.jpg?w=740) ;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+
+    }
+    .openChatBtn {
+      background-color: rgb(123, 28, 179);
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      font-weight: 500;
+      font-size: 18px;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 23px;
+      right: 28px;
+      width: 180px;
+   }
+   .openChatBtn:hover{
+    background: lightpink;}
+
+    .filterDiv {
+  float: left;
+  background-color: lightcoral;
+  color: #ffffff;
+  width: 250px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+
+}
+
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px 3px 3px;
+  background-color: greenyellow;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: lightskyblue;
+}
+
+.btn.active {
+  background-color: greenyellow;
+  color: black;
+}
+    
+   
+   
+  </style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+   
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Free Courses</a></li>
+      <li><a href="#">Upload Your Course</a></li>
+      <li><a href="#">Teach your course</a></li>
+      <li><a href="#">My Learning</a></li>
+      <li><a href="#">Cart</a></li>
+      <li><a href="#">Wishlist</a></li>
+      <li><a href="#">My Profile</a></li>
+      <li><a href="#">Notification</a></li>
+    </ul>
+  </div>
+</nav>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('development')"> Development</button>
+  <button class="btn" onclick="filterSelection('business')"> Business</button>
+  <button class="btn" onclick="filterSelection('finance')"> Finance & Accounting</button>
+  <button class="btn" onclick="filterSelection('it')"> It & Software</button>
+  <button class="btn" onclick="filterSelection('office')"> Office Productivity</button>
+  <button class="btn" onclick="filterSelection('Personal')"> Personal Development</button>
+  <button class="btn" onclick="filterSelection('Design')"> Design</button>
+  <button class="btn" onclick="filterSelection('marketing')"> Marketing</button>
+  <button class="btn" onclick="filterSelection('Health')"> Health and fitness</button>
+  <button class="btn" onclick="filterSelection('music')"> Music</button>
+  <button class="btn" onclick="filterSelection('lifestyle')">Lifestyle</button>
+</div>
+
+<div class="container">
+  <div class="filterDiv development">Web Development</div>
+  <div class="filterDiv lifestyle">Art & Craft</div>
+  <div class="filterDiv business">Entreprenurship</div>
+  <div class="filterDiv music">Instruments</div>
+  <div class="filterDiv development">Mobile Development</div>
+  <div class="filterDiv Health">Fitness</div>
+  <div class="filterDiv lifestyle">Beauty & Makeup</div>
+  <div class="filterDiv Design">Web Design</div>
+   <div class="filterDiv office">Microsoft</div>
+   <div class="filterDiv marketing">Social Media Marketing</div>
+  <div class="filterDiv business">Communication</div>
+   <div class="filterDiv it">Network & Security</div>
+    <div class="filterDiv Personal">Personal Transformation</div>
+ <div class="filterDiv development">Game Development</div>
+  <div class="filterDiv business">Managment</div>
+  <div class="filterDiv Health">Yoga</div>
+  <div class="filterDiv lifestyle">Travel</div>
+  <div class="filterDiv music">Music Production</div>
+ 
+  <div class="filterDiv finance">Account & Bookkeeping</div>
+  <div class="filterDiv Personal">Personal Productivety</div>
+  <div class="filterDiv marketing">Branding</div>
+  <div class="filterDiv music">Vocal</div>
+  <div class="filterDiv lifestyle">Food Beverage</div>
+  <div class="filterDiv it">It Certification</div>
+  <div class="filterDiv music">Music Software</div>
+  <div class="filterDiv marketing">Digital Marketing</div>
+  <div class="filterDiv development">Database design & development</div>
+  <div class="filterDiv finance">Cryptocurrency & Blockchain</div>
+  <div class="filterDiv business">Business Strategy</div>
+  <div class="filterDiv Personal">Leadership</div>
+   <div class="filterDiv it">Hardware</div>
+   <div class="filterDiv marketing"> Marketing Fundamentals</div>
+   <div class="filterDiv Design">Game Design</div>
+  <div class="filterDiv finance">Investing & Trading</div>
+  <div class="filterDiv finance">Finance</div>
+  <div class="filterDiv Personal">Career Development</div>
+   <div class="filterDiv it">Operating System & Servers</div>
+   <div class="filterDiv Health">Nutrients & Diet</div>
+  <div class="filterDiv development">Programming Language</div>
+  <div class="filterDiv business">Sales</div>
+  <div class="filterDiv Health">General Health</div>
+  <div class="filterDiv Design">Graphic Design</div>
+   <div class="filterDiv finance">Finacial Modeling & Analysis</div>
+   <div class="filterDiv Design"> Design Tools</div>
+   <div class="filterDiv Design">3D & Animation</div>
+   <div class="filterDiv Health">Sports</div>
+   <div class="filterDiv Health">Mental Health</div>
+
+
+</div>
+<button class="openChatBtn" onclick="openForm()"><a href="chat.html" style="text-decoration: none; color: white;"> Chat</a></button>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+
+</body>
+</html>
